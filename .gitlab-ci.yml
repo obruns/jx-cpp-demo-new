@@ -18,6 +18,7 @@ before_script:
         - cd build
         - cmake .. -G Ninja -DCMAKE_CXX_COMPILER=$COMPILER -DCMAKE_BUILD_TYPE=$MODE
         - time timeout 1200 ninja -v
+        - time timeout 10 ctest --verbose
 
 clang-debug:
     <<: *build_definition
