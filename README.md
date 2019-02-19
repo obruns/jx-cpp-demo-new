@@ -28,6 +28,7 @@ which was even split into [BSERV-10559](https://jira.atlassian.com/browse/BSERV-
       see if there are merge requests that resulted in the same tree if
       merged
     - [GitLab CE #55665](https://gitlab.com/gitlab-org/gitlab-ce/issues/55665)
+    - [GitLab ME #4892](https://gitlab.com/gitlab-org/gitlab-ce/merge_requests/4892)
   + [being able to close issues with 'Closes: #xxxx' and 'Fixes: #xxxx'](https://docs.gitlab.com/ce/user/project/issues/closing_issues.html#via-merge-request)
   + [cherry-pick from merge request](https://docs.gitlab.com/ce/user/project/merge_requests/cherry_pick_changes.html)
   + [support for rendering Jupyter notebook files as HTML](https://docs.gitlab.com/ce/user/project/repository/#jupyter-notebook-files)
