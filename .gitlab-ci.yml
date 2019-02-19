@@ -20,6 +20,13 @@ before_script:
         - time timeout 1200 ninja -v
         - time timeout 10 ctest --verbose
 
+clang-tidy:
+    script:
+        - mkdir build
+        - cd build
+        - cmake .. -G Ninja -DCMAKE_CXX_CLANG_TIDY:STRING='clang-tidy' -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_BUILD_TYPE=Debug
+        - time timeout 1200 ninja -v
+
 clang-debug:
     <<: *build_definition
     variables:
