@@ -1,4 +1,4 @@
-find_package(Boost 1.65.0 REQUIRED COMPONENTS unit_test_framework)
+find_package(Boost 1.67.0 REQUIRED COMPONENTS unit_test_framework)
 
 add_executable(demoTest demoTest.cpp)
 

@@ -1,4 +1,4 @@
-image: "registry.gitlab.com/obruns/bluetoe/ubuntu-build:1.0"
+image: "registry.gitlab.com/obruns/demonstrate-merge-strategies/debian-build:1.0"
 
 variables:
     BOOST_TEST_COLOR_OUTPUT: 1
@@ -8,7 +8,7 @@ variables:
 
 before_script:
     - g++ --version
-    - clang++-6.0 --version
+    - clang++ --version
     - cmake --version
     - ninja --version
 
@@ -23,13 +23,13 @@ before_script:
 clang-debug:
     <<: *build_definition
     variables:
-        COMPILER: clang++-6.0
+        COMPILER: clang++
         MODE: Debug
 
 clang-release:
     <<: *build_definition
     variables:
-        COMPILER: clang++-6.0
+        COMPILER: clang++
         MODE: Release
 
 gcc-debug:
