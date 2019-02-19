@@ -9,5 +9,6 @@ RUN apt update && \
         clang-format \
         clang-tidy \
         cmake \
-        libboost-all-dev \
+        git \
+        libboost-test-dev \
         ninja-build

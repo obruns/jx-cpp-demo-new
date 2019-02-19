@@ -1,4 +1,4 @@
-image: "registry.gitlab.com/obruns/demonstrate-merge-strategies/debian-build:1.0"
+image: "registry.gitlab.com/obruns/demonstrate-merge-strategies/debian-build:2.0"
 
 variables:
     BOOST_TEST_COLOR_OUTPUT: 1
