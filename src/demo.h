@@ -5,7 +5,15 @@
 template <typename T>
 class Demo {
   public:
-    bool m(T t) {
+    Demo() = default;
+    Demo(T value)
+        : inserted_{true}
+        , value_{value}
+    {
+    }
+
+    bool m(T t)
+    {
         const auto [r, inserted] = set_.insert(t);
         return inserted;
     }
