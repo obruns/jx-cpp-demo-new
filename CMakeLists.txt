@@ -10,7 +10,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 add_library(cxxDefaults INTERFACE)
 
 target_compile_options(cxxDefaults INTERFACE
-    -Wall -Wextra -Wpedantic -Wshadow -Werror -Wno-error=unused-variable
+    -Wall -Weffc++ -Wextra -Wpedantic -Wshadow -Werror -Wno-error=unused-variable
 )
 
 enable_testing()

@@ -21,7 +21,7 @@ class Demo {
     bool inserted() const { return inserted_; }
 
   private:
-    std::set<T> set_;
+    std::set<T> set_{};
     bool inserted_{false};
     T value_{0};
 };
