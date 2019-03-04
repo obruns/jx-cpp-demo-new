@@ -1,3 +1,6 @@
+#ifndef DEMO_H_
+#define DEMO_H_
+
 #include <iomanip>
 #include <iostream>
 #include <set>
@@ -6,7 +9,7 @@ template <typename T>
 class Demo {
   public:
     Demo() = default;
-    Demo(T value)
+    explicit Demo(T value)
         : inserted_{true}
         , value_{value}
     {
@@ -25,3 +28,5 @@ class Demo {
     bool inserted_{false};
     T value_{0};
 };
+
+#endif // DEMO_H

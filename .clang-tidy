@@ -1,8 +1,28 @@
 # https://clang.llvm.org/extra/clang-tidy/
 ---
-Checks:          'abseil-*,boost-*,bugprone-*,cert-*,cppcoreguidelines-*,clang-analyzer-*,clang-diagnostic-*,google-*,hicpp-*,llvm-*,modernize-*,performance-*,portability-*,readability-*'
-WarningsAsErrors: ''
-HeaderFilterRegex: ''
+Checks: '\
+  abseil-*,\
+  boost-*,\
+  bugprone-*,\
+  cert-*,\
+  cppcoreguidelines-*,\
+  clang-analyzer-*,\
+  clang-diagnostic-*,\
+  google-*,\
+  hicpp-*,\
+  llvm-*,\
+  -llvm-header-guard,\
+  modernize-*,\
+  performance-*,\
+  portability-*,\
+  readability-*,\
+'
+WarningsAsErrors: '\
+  *,\
+  -cert-err58-cpp,\
+  -cppcoreguidelines-pro-type-vararg,\
+'
+HeaderFilterRegex: '.*'
 AnalyzeTemporaryDtors: false
 FormatStyle:     none
 CheckOptions:

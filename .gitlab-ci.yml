@@ -22,7 +22,7 @@ before_script:
 
 clang-format:
     script:
-        - git diff -U0 --no-color "master..HEAD" | /usr/share/clang/clang-format-7/clang-format-diff.py -p1 | sh -c 'IFS=$'\n' ; exitCode=0 ; while read -r line ; do if [ ! -z "${line}" ] ; then exitCode=1 ; color=""; echo ${line} | grep "^- " > /dev/null ; if [ $? -eq 0 ] ; then color="\033[0;31m" ; fi ; echo ${line} | grep "^+ " > /dev/null ; if [ $? -eq 0 ] ; then color="\033[0;32m" ; fi ; printf "%b%s%s\033[0m\n" ${color} ${line} ; fi ; done ; exit ${exitCode}'
+        - git diff -U0 --no-color "origin/master..HEAD" | /usr/share/clang/clang-format-7/clang-format-diff.py -p1 | sh -c 'IFS=$'\n' ; exitCode=0 ; while read -r line ; do if [ ! -z "${line}" ] ; then exitCode=1 ; color=""; echo ${line} | grep "^- " > /dev/null ; if [ $? -eq 0 ] ; then color="\033[0;31m" ; fi ; echo ${line} | grep "^+ " > /dev/null ; if [ $? -eq 0 ] ; then color="\033[0;32m" ; fi ; printf "%b%s%s\033[0m\n" ${color} ${line} ; fi ; done ; exit ${exitCode}'
 
 clang-tidy:
     script:
