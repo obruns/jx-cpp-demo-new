@@ -1,6 +1,6 @@
 # https://clang.llvm.org/extra/clang-tidy/
 ---
-Checks: '\
+Checks: "\
   abseil-*,\
   boost-*,\
   bugprone-*,\
@@ -16,12 +16,12 @@ Checks: '\
   performance-*,\
   portability-*,\
   readability-*,\
-'
-WarningsAsErrors: '\
+"
+WarningsAsErrors: "\
   *,\
   -cert-err58-cpp,\
   -cppcoreguidelines-pro-type-vararg,\
-'
+"
 HeaderFilterRegex: '.*'
 AnalyzeTemporaryDtors: false
 FormatStyle:     none
