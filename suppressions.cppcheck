@@ -1,0 +1,3 @@
+unusedFunction:src/understanding-gcc-warnings.cpp:1
+unusedFunction:src/understanding-gcc-warnings.cpp:10
+arrayIndexOutOfBounds:src/understanding-gcc-warnings.cpp:19
